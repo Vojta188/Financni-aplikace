@@ -25,7 +25,7 @@ while True:
     konicky = mesicni_prijem - kompletni_utrata
     porovnani = konicky <= 0
 
-    print('\n STATUS','\n stav tvého účtu:' ,novy_stav_uctu, '\n Příjem tento měsíc:',mesicni_prijem, '\n Měsíčně po zaplacení poplatku zbyde', zbytek, '\n Měsíční útrata za jídlo:', utrata_jidlo_mesic, '\n Kompletní útrata za Jídlo, Nájem, Poplatky:', kompletni_utrata, '\n Peníze pro osobní potřebu:', konicky)
+    print('\n STATUS','\n stav tvého účtu:' ,novy_stav_uctu, 'Kč', '\n Příjem tento měsíc:',mesicni_prijem, 'Kč', '\n Měsíčně po zaplacení poplatku zbyde', zbytek, 'Kč', '\n Měsíční útrata za jídlo:', utrata_jidlo_mesic, 'Kč', '\n Kompletní útrata za Jídlo, Nájem, Poplatky:', kompletni_utrata, 'Kč', '\n Peníze pro osobní potřebu:', konicky, 'Kč')
 
 
     stav_uctu = novy_stav_uctu
