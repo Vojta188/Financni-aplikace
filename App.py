@@ -6,7 +6,7 @@ while True:
         break
     
     novy_stav_uctu_nastaveni = input("Chcete nastavit nový stav účtu napište ANO:")
-    if(novy_stav_uctu_nastaveni == 'Ano'):
+    if(novy_stav_uctu_nastaveni == 'ANO'):
     
         novy_stav_uctu = float(input('Zadej novy stav tvého účtu:'))
     
@@ -34,11 +34,11 @@ while True:
 
     if porovnani:
         {
-        print("Špatný měsíc")
+        print("Špatný měsíc zbylo:", konicky)
         }
     else:
         {
-        print("Dobrý měsíc")
+        print("Dobrý měsíc zbylo:", konicky)
         }
     
 
