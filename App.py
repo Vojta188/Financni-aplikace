@@ -4,8 +4,15 @@ while True:
     if konec == 'konec':
         print("program byl ukončen")
         break
-
-    stav_uctu = float(input('Zadej stav tvého účtu:'))
+    
+    novy_stav_uctu_nastaveni = input("Chcete nastavit nový stav účtu napište ANO:")
+    if(novy_stav_uctu_nastaveni == 'Ano'):
+    
+        novy_stav_uctu = float(input('Zadej novy stav tvého účtu:'))
+    
+    
+    
+    
     mesicni_prijem = float(input('Zadej příjem za tento měsíc:'))
     mesicni_najem = float(input('Zadej měsíční nájem:'))
     mesicne_poplatky = float(input('Zadej ostatní poplatky za měsíc:'))
@@ -18,12 +25,11 @@ while True:
     konicky = mesicni_prijem - kompletni_utrata
     porovnani = konicky <= 0
 
-    print('stav tvého účtu:',stav_uctu)
-    print('Příjem tento měsíc:',mesicni_prijem)
-    print('Měsíčně po zaplacení poplatku zbyde', zbytek)
-    print('Měsíční útrata za jídlo:', utrata_jidlo_mesic)
-    print('Kompletní útrata za Jídlo, Nájem, Poplatky:', kompletni_utrata)
-    print('Peníze pro osobní potřebu:', konicky)
+    print('\n STATUS','\n stav tvého účtu:' ,novy_stav_uctu, '\n Příjem tento měsíc:',mesicni_prijem, '\n Měsíčně po zaplacení poplatku zbyde', zbytek, '\n Měsíční útrata za jídlo:', utrata_jidlo_mesic, '\n Kompletní útrata za Jídlo, Nájem, Poplatky:', kompletni_utrata, '\n Peníze pro osobní potřebu:', konicky)
+
+
+    stav_uctu = novy_stav_uctu
+
 
 
     if porovnani:
@@ -34,6 +40,6 @@ while True:
         {
         print("Dobrý měsíc")
         }
-
+    
 
 print("Hezký den")
